@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desending</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let array=[3,2,4,5,1]
+
+    function slection(arr){
+        for(let i=0;i<arr.length;i++){
+            let last=arr.length - i -1
+            let min=getmin(arr,0,last)
+            swap(arr,min,last)
+        }
+    }
+
+    function getmin(arr,f,l){
+        let min=0
+        for(let i=f;i<=l;i++){
+            if(arr[i] < arr[min]){
+                min=i
+            }
+        }
+        return min
+    }
+
+    function swap(arr,min,last){
+        let t=arr[min]
+        arr[min]=arr[last]
+        arr[last]=t
+    }
+
+     slection(array)
+
+     console.log(array)
+
+
+</script>
