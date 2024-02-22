@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p-1</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let prices = [7,5,3,6,1,2]
+
+    function min(arr){
+
+        let min = 0;
+
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]<arr[min]){
+                min=i
+            }
+        }
+        return min
+    }
+    
+    let min_index=min(prices)
+
+    console.log(min_index)
+
+    let newarray=prices.slice(min_index,prices.length)
+
+
+    console.log(newarray)
+
+    function profit(newarray){
+
+        if(newarray.length > 0){
+
+            let mininum=newarray.reduce((acc,curr)=>Math.min(acc,curr))
+
+            let maximum=newarray.reduce((acc,curr)=>Math.max(acc,curr))
+
+            return maximum-mininum
+        }else{
+            return 0
+        }
+
+     
+    }
+
+       console.log(`PROFIT:${profit(newarray)}` )
+
+</script>
