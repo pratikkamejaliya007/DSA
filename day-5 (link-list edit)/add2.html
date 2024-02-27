@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    function link(value){
+        this.value=value
+        this.next=null
+    }
+
+    let s1=new link(10)
+
+    let s2=new link(20)
+
+    let s3=new link(30)
+
+    let s4=new link(40)
+
+    let s5=new link(50)
+
+    let s6=new link(60)
+
+    
+    s1.next=s2
+
+    s2.next=s3
+
+    s3.next=s4
+
+    s4.next=s5
+
+    let curr=s1
+
+    s4.next=s6
+
+    s6.next=s5
+
+
+    while(curr != null){
+        console.log(curr.value)
+        curr=curr.next
+    }
+
+</script>

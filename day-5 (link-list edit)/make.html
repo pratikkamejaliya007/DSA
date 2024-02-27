@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function link(value){
+        this.value=value
+        this.next=null
+    }
+
+    let s1=new link(1)
+
+    let s2=new link(2)
+
+    let s3=new link(3)
+
+    let s4=new link(4)
+
+    let s5=new link(5)
+
+    let s6=new link(6)
+
+    let s7=new link(7)
+
+    s1.next=s2
+
+    s2.next=s3
+
+    s3.next=s4
+
+    s4.next=s5
+
+    s2.next=s6
+
+    s6.next=s7
+
+    s7.next=s3
+
+    let curr=s1
+
+    while(curr != null){
+        console.log(curr.value)
+        curr=curr.next
+    }
+
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    function link(value){
+        this.val=value
+        this.next=null
+    }
+
+    let a1=new link(11)
+
+    let a2=new link(12)
+
+    let a3=new link(13)
+
+    let a4=new link(14)
+
+    let a5=new link(15)
+
+    let a6=new link(20)
+
+    a1.next=a2
+
+    a2.next=a3
+
+    a3.next=a4
+
+    a4.next=a5
+
+    a1.next=a6
+
+    a6.next=a2
+
+    let pre=a1
+
+    while(pre != null){
+        console.log(pre.val)
+        pre=pre.next
+    }
+
+</script>
