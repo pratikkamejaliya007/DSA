@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    function link(value){
+        this.value=value
+        this.next=null
+    }
+
+    let a1=new link(1)
+
+    let a2=new link(2)
+
+    let a3=new link(3)
+
+    let a4=new link(4)
+
+    let a5=new link(5)
+
+    let a6=new link(6)
+
+    a1.next=a2
+
+    a2.next=a3
+
+    a3.next=a4
+
+    a4.next=a5
+
+    a5.next=a6
+
+    function mid(head){
+
+        let slow=head
+
+        let fast=head
+
+        while(fast != null){
+            slow=slow.next
+            fast=fast.next.next
+        }
+        return slow.value
+
+    }
+
+    console.log(mid(a1))
+
+</script>
