@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,4 +47,54 @@
         current=current.next
     }
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link list</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function singly(value){
+        this.val=value
+        this.next=null
+    }
+
+    const a1=new singly(1)
+
+    const a2=new singly(2)
+
+    const a3=new singly(3)
+
+    const a4=new singly(4)
+
+    const a5=new singly(5)
+
+    const a6=new singly(6)
+
+    a6.next=a5
+
+    a5.next=a4
+
+    a4.next=a3
+
+    a3.next=a2
+
+    a2.next=a1
+
+    let current=a6
+
+    while(current != null){
+            console.log(current.val)
+        current=current.next
+    }
+
+>>>>>>> 286998d868ed591b65370f3f7752552710971086
 </script>
