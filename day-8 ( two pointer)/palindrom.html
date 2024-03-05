@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrom</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let str='naaaxn'
+
+    function palindrom(str){
+
+        let start = 0
+
+        let end=str.length-1
+
+        let isp=true
+
+        while(start < end){
+            if(str[start] == str[end]){
+                start++
+                end--
+                isp=true
+            }else{
+                start++
+                end--
+                isp=false
+                break
+            }
+        }
+
+        return isp
+
+    }
+
+    console.log(palindrom(str))
+
+</script>
