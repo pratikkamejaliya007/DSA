@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonaci</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    function fibo(number){
+        if(number <= 1){
+            return number
+        }else{
+            return fibo(number - 1) + fibo(number - 2)
+        }
+    }
+
+    console.log(fibo(8))
+
+
+</script>
