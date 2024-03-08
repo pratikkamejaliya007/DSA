@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>binary</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let arr=[5,4,3,2,1]
+
+    function binary(arr,target,s,e){
+
+        if(s > e){
+            return -1
+        }
+
+        let mid= Math.floor((s + e)/2)
+
+        if(arr[mid] == target){
+            return mid
+        }
+
+        if(arr[mid] < target){
+            return binary(arr,target,s,mid-1)
+        }else{
+            return binary(arr,target,mid+1,e)
+        }
+
+    }
+
+   let index = binary(arr,1,0,arr.length-1)
+
+   if(index != -1){
+    console.log(index)
+   }else{
+    console.log("not found")
+   }
+
+</script>
