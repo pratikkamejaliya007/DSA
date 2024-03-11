@@ -15,18 +15,26 @@
 
     function index(arr,Target){
 
+        let index
+
         for(let i=0;i<arr.length;i++){
             if(arr[i] == Target){
-                return i
+                index = i
+                break
             }else{
                 if(arr[i] == Target - 1){
-                    return i+1
+                    index= i+1
+                    break
+                }else{
+                    index= arr.length
                 }
             }
         }
 
+        return index
+
     }
 
-    console.log(index(array,4))
+    console.log(index(array,9))
 
 </script>
