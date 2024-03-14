@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeekSet</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let wk= new WeakSet
+
+    let obj1={"name" : "pratik"}
+
+    let obj2={"name" : "gautam"}
+
+    let obj3={"name" : "Divyesh"}
+
+    wk.add(obj1)
+
+    wk.add(obj2)
+
+    wk.add(obj3)
+
+    wk.delete(obj2)
+
+    console.log(wk)
+
+    console.log(wk.has(obj1))
+
+</script>

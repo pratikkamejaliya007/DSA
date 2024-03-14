@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeakSet</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let wm= new WeakMap
+
+    let a1={"value" : 10}
+
+    let a2={"value" : 11}
+
+    wm.set(a1,"hii..")
+
+    wm.set(a2,"hello")
+
+    wm.delete(a2)
+
+    console.log(wm)
+
+    console.log(wm.get(a1))
+
+    console.log(wm.has(a1))
+
+</script>
