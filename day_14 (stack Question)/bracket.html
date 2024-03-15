@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bracket</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let str='[{{(}}]'
+
+    function check(){
+        
+    let count=0
+
+        for(let i=0;i<str.length;i++){
+
+            if(str[i] == "{" || str[i] == "[" || str[i] == "("){
+                count++
+            }
+
+            if(str[i] == "}" || str[i] == "]" || str[i] == ")"){
+                count--
+            }
+
+
+        }
+
+        return count
+    }
+
+    let ab=check(str)
+
+    if(ab == 0){
+        console.log("blanced")
+    }else{
+        console.log('Not blanced')
+    }
+
+</script>
