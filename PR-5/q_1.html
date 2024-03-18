@@ -12,7 +12,7 @@
 <script>
 
     
-        class stack{
+    class stack{
         constructor(){
             this.stack=[]
         }
@@ -32,19 +32,6 @@
                 return this.stack.pop()
             }
         }
-
-        size(){
-            return this.stack.length
-        }
-
-        peek(){
-            if(this.isEmpty()){
-                return "Stack Empty"
-            }else{
-                return this.stack[this.stack.length - 1]
-            }
-        }
-
     }
 
     let a1=new stack
