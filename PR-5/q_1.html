@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stack</title>
+    <title>PR-4</title>
 </head>
 <body>
     
@@ -11,7 +11,8 @@
 </html>
 <script>
 
-    class stack{
+    
+        class stack{
         constructor(){
             this.stack=[]
         }
@@ -20,7 +21,7 @@
             this.stack.push(elements)
         }
 
-        isEmpty(){w
+        isEmpty(){
             return this.stack.length === 0
         }
 
@@ -46,25 +47,27 @@
 
     }
 
+    let a1=new stack
 
-    let stack_1=new stack
+    let array=[1,1,1]
 
-        stack_1.push(12)
+    function max(arr){
 
-        stack_1.push(13)
+        let max= (Math.max(...arr));
 
-        stack_1.push(14)
+        for(let i=0;i<arr.length;i++){
+                
+            if(arr[i] == max){
+                a1.push(-1)
+            }else{
+                a1.push(arr[i]+1)
+            }
+        }
 
-        stack_1.push(15)
+        return a1
 
-        stack_1.pop()
+    }
 
-        console.log(stack_1)
-
-    console.log(`Empty : ${stack_1.isEmpty()}`)
-
-    console.log(`Length: ${stack_1.size()}`)
-
-    console.log(`peek value: ${stack_1.peek()}`)
+    console.log(max(array))
 
 </script>
