@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q_1</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let str_1="nayan"
+
+    let str_2="nana"
+
+    function rev(str_1,str_2){
+
+       let arr1=[]
+
+       let arr2=[]
+
+       for(let i of str_1){
+        arr1.push(i)
+       }
+
+       for(let i of str_2){
+        arr2.push(i)
+       }
+
+       let new_1=arr1.sort()
+
+       let new_2=arr2.sort()
+
+       let s=new_1.join("")
+
+       let n=new_2.join("")
+
+       return s === n
+
+    }
+
+    console.log(rev(str_1,str_2))
+
+</script>
