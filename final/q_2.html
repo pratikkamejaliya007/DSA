@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+function isHappy(n) {
+    const seen = new Set();
+    while (n !== 1 && !seen.has(n)) {
+        seen.add(n);
+        n = sumOfSquaredDigits(n);
+    }
+    return n === 1;
+}
+
+function sumOfSquaredDigits(n) {
+    let sum = 0;
+    while (n > 0) {
+        const digit = n % 10;
+        sum += digit * digit;
+        n = Math.floor(n / 10);
+    }
+    return sum;
+}
+
+// Test cases
+console.log(isHappy(11));  // Output: true
+console.log(isHappy(2));   // Output: false
+
+
+</script>
